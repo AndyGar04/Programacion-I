@@ -81,7 +81,7 @@ class Fecha:
                 self.__dia += diaUsuario
                 diaUsuario = 0
 
-        return self.__dia, self.__mes, self.__anio 
+        return self.__dia, self.__mes, self.__anio    
 
 
     # c) diaSiguiente retorna una nueva fecha con los valores del día siguiente a la
@@ -107,7 +107,7 @@ class Fecha:
                 Mes = 1
                 Anio += 1
 
-    return Dia, Mes, Anios                       
+        return Dia, Mes, Anio                       
 
     # d) esIgualQue retorna true si otraFecha es equivalente a la fecha que recibe el
     # mensaje
@@ -128,6 +128,10 @@ class Fecha:
             Igual=False    
 
         return Igual
+    
+    def __str__(self)->'str':
+        return f" Dia:{self.__dia}, Mes:{self.__mes}, Anio:{self.__anio}"
+    
 
         
 

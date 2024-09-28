@@ -5,17 +5,13 @@
     es que hubiere) indicando hasta qué fecha no puede retirar libros
 """
 
-from Fecha import Fecha
-from Ej6Prestamo import Prestamo
-from Ej6Socio import Socio
-
 class Libro:
 
     #Atributos
 
     #Contructor
 
-    def __init__ (nombre:str,autor:str,editorial:str,categoria:char):
+    def __init__ (self,nombre:str,autor:str,editorial:str,categoria:str): #Categoria de tipo char
         self.__nombre=nombre
         self.__autor=autor
         self.__editorial=editorial
@@ -30,5 +26,5 @@ class Libro:
     def obtenerEditorial(self)->str:
         return self.__editorial
 
-    def obtenerCategoria(self)->char:
+    def obtenerCategoria(self)->str: #char
         return self.__categoria                

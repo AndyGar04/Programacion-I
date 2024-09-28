@@ -65,13 +65,13 @@ class Atletas:
     def obtenerNombre(self)->str:
         return self.__nombre        
 
-    def mismaDestrezaQue(self,otroAtleta:"Atleta")->bool:
+    def mismaDestrezaQue(self,otroAtleta:'Atletas')->bool:
         if (self.__destreza==(otroAtleta.obtenerDestreza())):
             return True
         else:
             return False
 
-    def mayorDestrezaQue(self,otroAtleta:"Atleta")->bool:
+    def mayorDestrezaQue(self,otroAtleta:'Atletas')->bool:
         if (self.__destreza>(otroAtleta.obtenerDestreza())):
             return True
         else:

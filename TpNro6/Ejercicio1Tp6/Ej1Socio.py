@@ -18,9 +18,7 @@
     parámetro
 """    
 
-from Fecha import Fecha
-from Ej6Prestamo import Prestamo
-from Ej6Libro import Libro
+from Ej1Fecha import Fecha
 
 class Socio:
 
@@ -40,25 +38,20 @@ class Socio:
         self.__fechaPenalizacion = fechaHasta
 
     def estaHabilitado(self, fecha: 'Fecha') -> bool:
-        habilitado = True
+        habilitado = False 
 
         if self.__fechaPenalizacion is not None:
-            if fecha.obtenerAnio() > self.__fechaPenalizacion.obtenerAnio():
+            if (fecha.obtenerAnio() > self.__fechaPenalizacion.obtenerAnio() or
+                (fecha.obtenerAnio() == self.__fechaPenalizacion.obtenerAnio() and
+                (fecha.obtenerMes() > self.__fechaPenalizacion.obtenerMes() or
+                (fecha.obtenerMes() == self.__fechaPenalizacion.obtenerMes() and
+                fecha.obtenerDia() > self.__fechaPenalizacion.obtenerDia())))):
                 habilitado = True
-            elif fecha.obtenerAnio() == self.__fechaPenalizacion.obtenerAnio():
-                if fecha.obtenerMes() > self.__fechaPenalizacion.obtenerMes():
-                    habilitado = True
-                elif fecha.obtenerMes() == self.__fechaPenalizacion.obtenerMes():
-                    if fecha.obtenerDia() > self.__fechaPenalizacion.obtenerDia():
-                        habilitado = True
-                    else:
-                        habilitado = False
-                else:
-                    habilitado = False
             else:
                 habilitado = False
 
         return habilitado
+
 
     def obtenerFechaNacimiento(self) -> 'Fecha':
         return self.__nacimiento
@@ -67,4 +60,4 @@ class Socio:
         return self.__fechaPenalizacion
 
     def __str__(self) -> str:
-        return f"Socio: {self.__nombre}, Nacimiento: {self.__nacimiento}, Penalización: {penalizacion}"
+        return f"Socio: {self.__nombre}, Nacimiento: {self.__nacimiento}, Penalización: {self.__fechaPenalizacion}"
