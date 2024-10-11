@@ -5,13 +5,13 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="zE6uVXOY2jcimRljiA2--1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Entrada&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nro_entrada:int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- fecha: &#39;Fecha&#39;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tipo:str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;Constructor&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Entrada(nro_entrada:int, fecha:&#39;Fecha&#39;, tipo:str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;Consultas&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ obtenerNro_Entrada():int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ obtenerFecha():&#39;Fecha&#39;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+obtenerTipo():str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;Comandos&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ establecerNro_Entrada(nro, int)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ establecerFecha(fecha,&#39;Fecha&#39;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ establecerTipo(tipo, str)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="500" y="70" width="220" height="290" as="geometry" />
+          <mxGeometry x="450" y="80" width="220" height="290" as="geometry" />
         </mxCell>
         <mxCell id="zE6uVXOY2jcimRljiA2--2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Guia&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- turnoTrabajo: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;Constructor&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Guia(nombre: str, turnoTrabajo)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;Consultas&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ obtenerNombre():str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ obtenerTurnoTrabajo():str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;Comandos&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ establecerNombre(nombre, str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ establecerTurnoTrabajo(turno, str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ habilitarVisitante(visitante, &#39;Visitante&#39;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="500" y="410" width="220" height="250" as="geometry" />
+          <mxGeometry x="105" y="560" width="220" height="250" as="geometry" />
         </mxCell>
         <mxCell id="zE6uVXOY2jcimRljiA2--4" value="Atraccion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-150" y="80" width="260" height="380" as="geometry" />
+          <mxGeometry x="-260" y="90" width="260" height="380" as="geometry" />
         </mxCell>
         <mxCell id="zE6uVXOY2jcimRljiA2--5" value="- nombre():str&lt;div&gt;- tipo():str&lt;/div&gt;&lt;div&gt;- nivelEmocion():str&lt;/div&gt;&lt;div&gt;- estaturaMinRequerida():float&lt;/div&gt;&lt;div&gt;- turnoDeFuncionamiento():str&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="zE6uVXOY2jcimRljiA2--4" vertex="1">
           <mxGeometry y="26" width="260" height="84" as="geometry" />
@@ -23,16 +23,34 @@
           <mxGeometry y="118" width="260" height="262" as="geometry" />
         </mxCell>
         <mxCell id="CUtMYsf2_FdT0VgCOpHG-1" value="Visitante" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="70" width="250" height="480" as="geometry" />
+          <mxGeometry x="90" y="70" width="250" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="CUtMYsf2_FdT0VgCOpHG-2" value="- nombre:str&lt;div&gt;- edad: int&lt;/div&gt;&lt;div&gt;- altura: float&lt;/div&gt;&lt;div&gt;- correo: str&lt;/div&gt;&lt;div&gt;- atraccionesVisitadas:list(&#39;Atraccion&#39;)&lt;/div&gt;&lt;div&gt;- Habilitado: bool&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CUtMYsf2_FdT0VgCOpHG-1">
-          <mxGeometry y="26" width="250" height="104" as="geometry" />
+        <mxCell id="CUtMYsf2_FdT0VgCOpHG-2" value="- nombre:str&lt;div&gt;- edad: int&lt;/div&gt;&lt;div&gt;- altura: float&lt;/div&gt;&lt;div&gt;- correo: str&lt;/div&gt;&lt;div&gt;- atraccionesVisitadas:list(&#39;Atraccion&#39;)&lt;/div&gt;&lt;div&gt;- Habilitado: bool&lt;/div&gt;&lt;div&gt;- Entrada: &#39;Entrada&#39;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CUtMYsf2_FdT0VgCOpHG-1">
+          <mxGeometry y="26" width="250" height="124" as="geometry" />
         </mxCell>
         <mxCell id="CUtMYsf2_FdT0VgCOpHG-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CUtMYsf2_FdT0VgCOpHG-1">
-          <mxGeometry y="130" width="250" height="8" as="geometry" />
+          <mxGeometry y="150" width="250" height="8" as="geometry" />
         </mxCell>
         <mxCell id="CUtMYsf2_FdT0VgCOpHG-4" value="&amp;lt;&amp;lt;Constructor&amp;gt;&amp;gt;&lt;div&gt;Visitante(nombre:str, edad:int, altura:float, correo:str)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt;Consultas&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;+ obtenerNombre():str&lt;/div&gt;&lt;div&gt;+ obtenerEdad():int&lt;/div&gt;&lt;div&gt;+ obtenerAltura():float&lt;/div&gt;&lt;div&gt;+ obtenerCorreo():str&lt;/div&gt;&lt;div&gt;+ obtenerAtracVisit():&#39;Atraccion&#39;&lt;/div&gt;&lt;div&gt;+ obtenerHabilitado():bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt;Comandos&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;+ establecerNombre(nombre, str)&lt;/div&gt;&lt;div&gt;+ establecerEdad(edad, int)&lt;/div&gt;&lt;div&gt;+ establecerAltura(altura, float)&lt;/div&gt;&lt;div&gt;+ establecerCorreo(correo, str)&lt;/div&gt;&lt;div&gt;+ anotarAtracVisit(atraccion, &#39;Atraccion&#39;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CUtMYsf2_FdT0VgCOpHG-1">
-          <mxGeometry y="138" width="250" height="342" as="geometry" />
+          <mxGeometry y="158" width="250" height="282" as="geometry" />
+        </mxCell>
+        <mxCell id="CUtMYsf2_FdT0VgCOpHG-5" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zE6uVXOY2jcimRljiA2--5" target="CUtMYsf2_FdT0VgCOpHG-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="290" as="sourcePoint" />
+            <mxPoint x="280" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CUtMYsf2_FdT0VgCOpHG-6" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zE6uVXOY2jcimRljiA2--1" target="CUtMYsf2_FdT0VgCOpHG-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="290" as="sourcePoint" />
+            <mxPoint x="280" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CUtMYsf2_FdT0VgCOpHG-7" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.497;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CUtMYsf2_FdT0VgCOpHG-4" target="zE6uVXOY2jcimRljiA2--2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="210" y="508" as="sourcePoint" />
+            <mxPoint x="360" y="630" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
