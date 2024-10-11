@@ -7,7 +7,7 @@
 
 class Atraccion():
 
-    def __init__(nombre:str, tipo:str, nivelEmocion:str, estMinRequerida:float, turno:str):
+    def __init__ (self, nombre:str, tipo:str, nivelEmocion:str, estMinRequerida:float, turno:str):
         self.__nombre=nombre
         self.__tipo=tipo
         self.__nivelEmocion=nivelEmocion

@@ -8,14 +8,13 @@ from classEntrada import Entrada
 
 class Visitante():
 
-    def __init__ (nombre:str, edad:int, altura:float, correo:str, entrada:'Entrada'):
+    def __init__(self, nombre:str, edad:int, altura:float, correo:str, entrada:'Entrada'):
         self.__nombre=nombre
         self.__edad=edad
         self.__altura=altura
         self.__correo=correo
         self.__entrada=entrada
         self.__atraccionesVisitadas=None
-        self.__habilitado=False
 
     def obtenerNombre(self)->str:
         return self.__nombre
@@ -33,9 +32,6 @@ class Visitante():
         if not self.__atraccionesVisitadas:
             return []
         return [atraccion.obtenerNombre() for atraccion in self.__atraccionesVisitadas]
-
-    def obtenerHabilitado(self)->bool:                    
-        return self.__habilitado
 
     def obtenerNroEntrada(self)->'Entrada':
         return self.__entrada

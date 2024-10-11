@@ -9,7 +9,7 @@ from classAtraccion import Atraccion
 
 class Guia():
 
-    def __init__ (nombre:str, turno:str):
+    def __init__ (self, nombre:str, turno:str):
         self.__nombre=nombre
         self.__turno=turno
 
@@ -30,3 +30,12 @@ class Guia():
             raise ValueError("Turno debe ser de tipo string")
         else:
             self.__turno=turno
+
+    def habilitarVisitante(self, visitante:'Visitante', atraccion:'Atraccion'):
+        if not isinstance(visitante, Visitante) or not isinstance(atraccion, Atraccion):
+            raise ValueError("Funcion con parametros mal pactados")
+        else:
+            if (visitante.obtenerAltura() >= atraccion.obtenerEstMinRequerida()):
+                visitante.anotarAtracVisit(atraccion)
+            else:
+                print("El visitante no cumplio con las caracteristicas necesarias") 

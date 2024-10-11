@@ -7,7 +7,7 @@ from Fecha import Fecha
 
 class Entrada():
 
-    def __init__ (nroEntrada:int, fecha:Fecha, tipo:str):
+    def __init__ (self, nroEntrada:int, fecha:Fecha, tipo:str):
         self.__nroEntrada=nroEntrada
         self.__fecha=fecha
         self.__tipo=tipo
@@ -37,16 +37,7 @@ class Entrada():
         if not isinstance(tipo, str):
             raise ValueError("El tipo debe ser un string")
         else:
-            self.__tipo=tipo
-
-    def habilitarVisitante(self, visitante:'Visitante', atraccion:'Atraccion'):
-        if not isinstance(visitante, 'Visitante') or not isinstance(atraccion, 'Atraccion'):
-            raise ValueError("Funcion con parametros mal pactados")
-        else:
-            if (visitante.obtenerAltura() >= atraccion.obtenerEstMinRequerida()):
-                visitante.establecerHabilitado(True)
-            else:
-                visitante.establecerHabilitado(False)                                           
+            self.__tipo=tipo                                          
 
 
 
