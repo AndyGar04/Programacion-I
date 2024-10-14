@@ -1,32 +1,43 @@
-from classDepartamento import Departamento
 from classInmueble import Inmueble
+from classDepartamento import Departamento
 from classPropietario import Propietario
 from classQuinta import Quinta
+from classInmoviliaria import Inmoviliaria
 
-class TesterDepartamento():
+class TesterInmobiliaria():
 
     def test():
 
         propietario1 = Propietario("Marta")
+        propietario2 = Propietario("Juan")
 
-        print("Probar inmueble")
-        inmueble1 = Inmueble(122,"Salta 365", propietario1, 12, 10)
-        print(inmueble1.precioVenta(1000.0))
-        print(inmueble1.costoAlquiler(1000))
+        print("Probar Inmobiliaria")
+        inmobiliaria = Inmoviliaria(None)
 
-        Depa1 = Departamento(123, "Salta 365", propietario1, 5, 10, 16000, False)
-        print(f"La venta de el departamento de {Depa1.obtenerDomicilio()} cerro en {Depa1.precioVenta(1000.0)}")
-        print(Depa1.costoAlquiler(10000))
+        inmueble1 = Inmueble(122, "Salta 365", propietario1, 100, 120)
+        depa1 = Departamento(123, "Salta 365", propietario1, 5, 10, 16000, False)
+        quinta1 = Quinta(125, "Quinta de Palito", propietario2, 300, 500, 200)
 
-        Depa2 = Departamento(124, "Salta 221", propietario1, 5, 10, 16000, True)
-        print(Depa2.precioVenta(1000.0))
-        print(f"El costo del alquiler de {Depa2.obtenerDomicilio()} es de {Depa2.costoAlquiler(10000)}")
+        # Insertar propiedades
+        inmobiliaria.insertar(inmueble1)
+        inmobiliaria.insertar(depa1)
+        inmobiliaria.insertar(quinta1)
 
-        Quinta1 = Quinta(125, "LaQuinta de Palito", propietario1, 5, 10, 200)
-        print(Depa1.precioVenta(1000.0))
-        print(f"El costo del alquiler de {Quinta1.obtenerDomicilio()} es de {Quinta1.costoAlquiler(10000)}")
+        # Eliminar propiedad
+        inmobiliaria.eliminar(inmueble1)
 
-        
+        # Comprobar si hay inmuebles
+        print(f"¿Hay inmuebles? {inmobiliaria.hayInmuebles()}")
+
+        # Contar propiedades con menos de 200 metros
+        print(f"Propiedades con menos de 200 metros cuadrados: {inmobiliaria.contarPropiedadesMasMetros(200)}")
+
+        # Propiedad con mayor precio de venta
+        mayor_precio = inmobiliaria.mayorPrecioVenta()
+        if mayor_precio:
+            print(f"Propiedad con mayor precio de venta: {mayor_precio.obtenerDomicilio()}")
+        else:
+            print("No hay propiedades disponibles.")
 
 if __name__ == "__main__":
-    TesterDepartamento.test()
+    TesterInmobiliaria.test()

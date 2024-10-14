@@ -26,7 +26,7 @@ class Inmoviliaria():
             raise ValueError("La póliza debe ser de tipo PolizaInmueble")
         
         if propiedad in self.__propiedades:
-            self.__propiedades.remove(propiedades)
+            self.__propiedades.remove(propiedad)
             print(f"La póliza {propiedad.obtenerCodigo()} fue eliminada.")
         else:
             print("La póliza no existe en la aseguradora.")
@@ -56,8 +56,8 @@ class Inmoviliaria():
         else:
             Maximo=0
             for propiedad in self.__propiedades:    
-                if propiedad.precioVenta() > Maximo:
-                    Maximo=propiedad.precioVenta()
+                if propiedad.precioVenta(10.0) > Maximo:
+                    Maximo=propiedad.precioVenta(10.0)
                     propiedad_maxPrecio = propiedad
 
             return propiedad_maxPrecio        

@@ -1,4 +1,5 @@
 from classInmueble import Inmueble
+from classPropietario import Propietario
 
 class Quinta(Inmueble):
 
