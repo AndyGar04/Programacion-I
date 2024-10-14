@@ -1,16 +1,20 @@
 from classPersona import Persona
+from classProyecto import Proyecto
 
-class PersonalDeMantenimiento(Persona):
+class Programador(Persona):
     
-    def __init__(self, nombre:str, apellido:str, dni:str, nroLegajo:int, area:str):
+    def __init__(self, nombre:str, apellido:str, dni:str, nroLegajo:int, proyecto:'Proyecto'):
         super().__init__(nombre, apellido, dni, nroLegajo)
-        self.__area=area
+        self.__proyecto=proyecto
     
-    def establecerArea(self, area:str):
-        if not isinstance(area, str):
-            raise ValueError("El area debe ser una string")
+    def establecerProyecto(self, proyecto:'Proyecto'):
+        if not isinstance(proyecto, Proyecto):
+            raise ValueError("El proyecto debe ser de tipo Proyecto")
         else:
-            self.__area=area
+            self.__proyecto=proyecto
+            
+    def obtenerProyecto(self):
+        return self.__proyecto.obtenerNombre()        
         
     def establecerNombre(self, nombre):
         return super().establecerNombre(nombre)
@@ -23,9 +27,6 @@ class PersonalDeMantenimiento(Persona):
     
     def establecerNroLegajo(self, nroLegajo):
         return super().establecerNroLegajo(nroLegajo)
-    
-    def obtenerArea(self)->str:
-        return self.__area
     
     def obtenerApellido(self):
         return super().obtenerApellido()
