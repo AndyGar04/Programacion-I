@@ -1,4 +1,6 @@
-class Suscripcion():
+from abc import ABC, abstractmethod
+
+class Suscripcion(ABC):
     
     def __init__ (self, nombre:str, email:str, telefono:str):
         self._nombre=nombre
@@ -26,5 +28,6 @@ class Suscripcion():
     def obtenerTelefono(self)->str:
         return self._telefono
     
+    @abstractmethod
     def reproducirMusica(self):
         pass    
